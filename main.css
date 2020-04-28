@@ -1,11 +1,76 @@
-/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 
 
 
 footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('M.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("sad-505857_1280.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("8e7.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("U3.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position :center;
+}
+    
+  
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+    .bgimg-4{
+        background-attachment: scroll;
+        height: 200px;
+    }
+    
+    
+}
+    div.bar a.right{
+        float: right;
+    }
+
+
 
 
 /* End extract */
@@ -38,6 +103,85 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 .dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#ccc;color:#000}
+
+
+.skills11{
+    font-family: sans-serif;
+    list-style: none;
+    width: 400px;
+    margin: 60px auto;
+}
+
+.skills11 li{
+    margin: 20px 0;
+}
+
+.bar{
+    background: lightgrey;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+
+.bar span{
+    height: 10px;
+    float: left;
+    background: #2187e7;
+}
+
+
+
+
+
+
+
+.photo{
+    width: 90%;
+    animation: photo 2s;
+}
+
+.web{
+    width: 75%;
+    animation: web 2s;
+}
+
+.shop{
+    width: 65%;
+    animation: shop 2s;
+}
+
+@keyframes photo{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+          width: 90%;
+    }
+}
+
+@keyframes web{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+          width: 75%;
+    }
+}
+
+@keyframes shop{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+          width: 65%;
+    }
+}
 
 
 
@@ -268,5 +412,31 @@ w3-block{display:block;width:100%}
 
 .text-black,.hover-text-black:hover{color:#000!important}
 
-
+body
+{
+}
+heart
+{
+	position: absolute;
+	background: url(heart.png);
+	background-size: cover;
+	pointer-events: none;
+	transform: translate(-50%,-50%);
+	animation: animate 2s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: translate(-50%,-50%);
+		opacity: 1;
+		filter: hue-rotate(0deg);
+	}
+	100%
+	{
+		transform: translate(-50%,-1000%);
+		opacity: 0;
+		filter: hue-rotate(720deg);
+	}
+}
 
