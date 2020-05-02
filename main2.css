@@ -1,0 +1,141 @@
+
+.container-fluid{
+    padding: 0px; 
+    margin: auto;
+}
+
+
+nav.mycolor{
+    padding: 0px;
+    border: none;
+}
+
+h1.heading{
+    
+    font-family: sans-serif;
+    font-size: 24px;
+    color:darkslategray;
+    margin-left: 10%;
+    
+}
+
+div.icon{
+    float: right;
+}
+
+.fas2{
+    padding-right: 40px;
+    padding-top: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+body
+{
+	margin: auto;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-mycontent: center;
+	align-items: center;
+	font-family: consolas;
+}
+.containermy
+{
+	position: relative;
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-mycontent: space-around;
+    padding-left: 40px;
+    margin: auto;
+}
+.containermy .mybox
+{
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 20px 0;
+	mybox-sizing: border-mybox;
+	overflow: hidden;
+
+}
+.containermy .mybox .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	clip-path: circle(400px at center 100px);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+.containermy .mybox:hover .imgBx
+{
+	clip-path: circle(80px at center 100px);
+	transition-delay: 0s;
+}
+.containermy .mybox .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.containermy .mybox .mycontent
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55%;
+	padding: 20px;
+	mybox-sizing: border-mybox;
+	text-align: center;
+}
+.containermy .mybox .mycontent h2
+{
+	margin: auto;
+	padding: 0;
+}
+.containermy .mybox .mycontent a
+{
+	text-decoration: none;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	display: inline-block;
+}
+.containermy .mybox .mycontent h2,
+.containermy .mybox .mycontent p,
+.containermy .mybox .mycontent a
+{
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+.containermy .mybox:hover .mycontent h2
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.5s
+}
+.containermy .mybox:hover .mycontent p
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.7s
+}
+.containermy .mybox:hover .mycontent a
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.9s
+}
+
+
+

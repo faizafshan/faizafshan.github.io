@@ -164,7 +164,12 @@ w3-block{display:block;width:100%}
 
 .container,.panel{padding:0.01em 16px}
 
-
+button.shop{
+    display: block;
+    margin:auto;
+    margin-bottom: 20px;
+    
+}
 
 
 .panel{margin-top:16px;margin-bottom:16px}
